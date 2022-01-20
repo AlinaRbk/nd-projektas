@@ -19,8 +19,8 @@ class CreateClientsTable extends Migration
             $table->string('name');
             $table->string('surname');
             $table->string('username');
-            $table->bigInteger('company_id');
-            $table->string('image_url');
+            $table->unsignedBigInteger('company_id');
+            $table->string('image_url',300);
 
             $table->timestamps();
         });
